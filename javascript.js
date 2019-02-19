@@ -51,38 +51,75 @@ document.getElementById("startReset").onclick=function()
 
 document.getElementById("box1").onclick=function()
 {
-    if(correct_bttn==1)
-        score++;
-    else
-        score--;
-    QandA();
+    if(playing)
+    {
+        if(correct_bttn==1)
+         {
+             document.getElementById("correct").style.display="block";
+            score++;
+         }
+        else
+        {
+            score--;
+            document.getElementById("wrong").style.display="block";
+        }
+        QandA();
+    }
 }
 
 document.getElementById("box2").onclick=function()
 {
-    if(correct_bttn==2)
-        score++;
-    else
-        score--;
-    QandA();
+    if(playing)
+    {    
+        if(correct_bttn==2)
+        {
+             document.getElementById("correct").style.display="block";
+            score++;
+         }
+        else
+        {
+            score--;
+            document.getElementById("wrong").style.display="block";
+        }
+
+        QandA();
+    }
 }
 
 document.getElementById("box3").onclick=function()
 {
-    if(correct_bttn==3)
-        score++;
-    else
-        score--;
-    QandA();
+    if(playing)
+    {
+        if(correct_bttn==3)
+        {
+             document.getElementById("correct").style.display="block";
+            score++;
+         }
+        else
+        {
+            score--;
+            document.getElementById("wrong").style.display="block";
+        }
+        QandA();
+    }
 }
 
 document.getElementById("box4").onclick=function()
 {
-    if(correct_bttn==4)
-        score++;
-    else
-        score--;
-    QandA();
+    if(playing)
+    {
+        if(correct_bttn==4)
+         {
+             document.getElementById("correct").style.display="block";
+            score++;
+         }
+        else
+        {
+            score--;
+            document.getElementById("wrong").style.display="block";
+        }
+        QandA();
+    }
 }
 
 
@@ -96,6 +133,9 @@ function countDown()
         {
             gameOver();
         }
+        document.getElementById("wrong").style.display="none";
+        document.getElementById("correct").style.display="none";
+        
     },1000);
 }
 
@@ -113,6 +153,7 @@ function gameOver()
 
 function QandA()
 {
+    
     var x=Math.round( Math.random()*9 ) + 1;
     var y=Math.round( Math.random()*9 ) + 1;
     correct=x*y;
