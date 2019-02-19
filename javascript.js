@@ -53,6 +53,8 @@ document.getElementById("box1").onclick=function()
 {
     if(correct_bttn==1)
         score++;
+    else
+        score--;
     QandA();
 }
 
@@ -60,6 +62,8 @@ document.getElementById("box2").onclick=function()
 {
     if(correct_bttn==2)
         score++;
+    else
+        score--;
     QandA();
 }
 
@@ -67,6 +71,8 @@ document.getElementById("box3").onclick=function()
 {
     if(correct_bttn==3)
         score++;
+    else
+        score--;
     QandA();
 }
 
@@ -74,6 +80,8 @@ document.getElementById("box4").onclick=function()
 {
     if(correct_bttn==4)
         score++;
+    else
+        score--;
     QandA();
 }
 

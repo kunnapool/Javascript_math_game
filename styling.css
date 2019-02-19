@@ -158,7 +158,7 @@ html
     top: 100px;
     left: 70px;
     border-radius: 10px;
-    z-index: 2;
+    z-index: 5;
     display: none;
 }
 
