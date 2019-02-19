@@ -135,13 +135,14 @@ html
     padding: 10px;
     position: absolute;
     right: 10px;
-    top: 442px;
+    top: 419px;
     background-color: greenyellow;
     border-radius: 10px;
     box-shadow: 3px 3px 5px 2px grey;
     -moz-box-shadow: 3px 3px 5px 2px grey;
     -webkit-box-shadow: 3px 3px 5px 2px grey;
     display: none;
+    text-align: center;
 }
 
 
