@@ -26,7 +26,7 @@ document.getElementById("startReset").onclick=function()
         score=0; document.getElementById("score_val").innerHTML=score;
         
        
-        //sho<t6me
+        //show time
         document.getElementById("time").style.display="block";
         
         //change start to reset
