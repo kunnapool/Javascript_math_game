@@ -1,1 +1,1 @@
-Simple java script math game
+Simple javascript math game
